@@ -3,6 +3,7 @@ package com.yello.parkourmod;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -45,14 +46,15 @@ public class ParkourMod
     // Creates a new food item with the id "examplemod:example_id", nutrition 1 and saturation 2
     public static final RegistryObject<Item> PARKOUR_FOOD = ITEMS.register("up_food", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
             .alwaysEat()
-            .effect(() -> new MobEffectInstance(MobEffects.JUMP, 12000, 1, false, false), 1.0f)
-            .nutrition(8)
-            .saturationMod(2f)
+            .effect(() -> new MobEffectInstance(MobEffects.JUMP, 6000, 2, false, false), 1.0f)
+            .nutrition(2)
+            .saturationMod(1f)
             .build())));
 
     // Creates a creative tab with the id "examplemod:example_tab" for the example item, that is placed after the combat tab
     public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("parkour_mod_tab", () -> CreativeModeTab.builder()
             .withTabsBefore(CreativeModeTabs.COMBAT)
+            .title(Component.translatable("parkour_mod_tab"))
             .icon(() -> PARKOUR_FOOD.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(PARKOUR_FOOD.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event

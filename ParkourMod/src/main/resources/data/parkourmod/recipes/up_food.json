@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "yx",
+    "xy"
+  ],
+  "key": {
+    "x": { "item": "minecraft:sugar" },
+    "y": { "item": "minecraft:slime_ball" }
+  },
+  "result": {
+    "item": "parkourmod:up_food",
+    "count": 2
+  }
+}
