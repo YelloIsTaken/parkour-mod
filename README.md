@@ -4,7 +4,8 @@ Parkour Mod
 
 # Features:
 
-## Massive procrastination
+## Super Up Item
+Gives Jump Boost II when eaten! Great for bigger jumps!
 
 # Versions:
 
