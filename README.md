@@ -4,7 +4,7 @@ Parkour Mod
 
 # Features:
 
-## Masive procrastination
+## Massive procrastination
 
 # Versions:
 
