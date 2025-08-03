@@ -9,7 +9,8 @@ Gives Jump Boost II when eaten! Great for bigger jumps!
 <img src="https://raw.githubusercontent.com/YelloIsTaken/parkour-mod/refs/heads/main/ParkourMod/parkourmod.png" alt="Super Up Item">
 ## Rubber Block
 Throws you up into the air and when you land on it you take no damage!
-
+## Gel Block
+You take no damage when you land on it
 # Versions:
 
 ## Nun yet womp womp
