@@ -2,5 +2,6 @@
   "item.parkourmod.up_food": "Super Up",
   "parkour_mod_tab": "Parkour Mod",
   "block.parkourmod.rubber_block": "Rubber Block",
-  "block.parkourmod.gel_block": "Gel Block"
+  "block.parkourmod.gel_block": "Gel Block",
+  "item.parkourmod.rubber": "Rubber"
 }

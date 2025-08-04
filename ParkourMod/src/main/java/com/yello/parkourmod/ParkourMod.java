@@ -37,6 +37,7 @@ public class ParkourMod
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
+    public static final RegistryObject<Item> RUBBER = ITEMS.register("rubber", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Block> RUBBER_BLOCK = BLOCKS.register("rubber_block", () -> new RubberBlock(Block.Properties.of()));
     public static final RegistryObject<Item> RUBBER_BLOCK_ITEM = ITEMS.register("rubber_block", () -> new BlockItem(RUBBER_BLOCK.get(), new Item.Properties()));
     public static final RegistryObject<Block> GEL_BLOCK = BLOCKS.register("gel_block", () -> new GelBlock(Block.Properties.of()));
@@ -56,6 +57,7 @@ public class ParkourMod
                 output.accept(PARKOUR_FOOD.get().getDefaultInstance());
                 output.accept(RUBBER_BLOCK_ITEM.get().getDefaultInstance());
                 output.accept(GEL_BLOCK_ITEM.get().getDefaultInstance());
+                output.accept(RUBBER.get().getDefaultInstance());
             }).build());
 
     public ParkourMod(FMLJavaModLoadingContext context)
