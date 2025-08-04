@@ -44,7 +44,7 @@ public class ParkourMod
     public static final RegistryObject<Item> GEL_BLOCK_ITEM = ITEMS.register("gel_block", () -> new BlockItem(GEL_BLOCK.get(), new Item.Properties()));
     public static final RegistryObject<Item> PARKOUR_FOOD = ITEMS.register("up_food", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
             .alwaysEat()
-            .effect(() -> new MobEffectInstance(MobEffects.JUMP, 6000, 2, false, false), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.JUMP, 6000, 1, false, false), 1.0f)
             .nutrition(2)
             .saturationMod(1f)
             .build())));

@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public class GelBlock extends Block {
     public GelBlock(Properties properties){
-        super(properties.strength(0.5f).sound(SoundType.HONEY_BLOCK).noOcclusion());
+        super(properties.strength(0.1f).sound(SoundType.HONEY_BLOCK).noOcclusion());
     }
     @Override
     public void fallOn(Level level, BlockState state, BlockPos pos, Entity entity, float fallDistance) {

@@ -10,7 +10,7 @@ import net.minecraft.world.level.block.SoundType;
 
 public class RubberBlock extends Block {
     public RubberBlock(Properties properties){
-        super(properties.strength(0.5f).sound(SoundType.HONEY_BLOCK).noOcclusion());
+        super(properties.strength(0.1f).sound(SoundType.HONEY_BLOCK).noOcclusion());
     }
 
     @Override
