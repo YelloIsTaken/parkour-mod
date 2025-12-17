@@ -7,5 +7,7 @@
   "item.parkourmod.kill_block": "Kill Block",
   "item.parkourmod.heal_block": "Heal Block",
   "item.parkourmod.rubber": "Rubber",
-  "block.parkourmod.heal_block": "Heal Block"
+  "block.parkourmod.heal_block": "Heal Block",
+  "item.parkourmod.damage_block": "Damage Block",
+  "block.parkourmod.damage_block": "Damage Block"
 }

@@ -46,6 +46,8 @@ public class ParkourMod
     public static final RegistryObject<Item> KILL_ITEM = ITEMS.register("kill_block", () -> new BlockItem(KILL.get(), new Item.Properties()));
     public static final RegistryObject<Block> HEAL_BLOCK = BLOCKS.register("heal_block", () -> new HealBlock(Block.Properties.of()));
     public static final RegistryObject<Item> HEAL_BLOCK_ITEM = ITEMS.register("heal_block", () -> new BlockItem(HEAL_BLOCK.get(), new Item.Properties()));
+    public static final RegistryObject<Block> DAMAGE_BLOCK = BLOCKS.register("damage_block", () -> new DamageBlock(Block.Properties.of()));
+    public static final RegistryObject<Item> DAMAGE_BLOCK_ITEM = ITEMS.register("damage_block", () -> new BlockItem(DAMAGE_BLOCK.get(), new Item.Properties()));
     public static final RegistryObject<Item> PARKOUR_FOOD = ITEMS.register("up_food", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
             .alwaysEat()
             .effect(() -> new MobEffectInstance(MobEffects.JUMP, 6000, 1, false, false), 1.0f)
@@ -63,6 +65,8 @@ public class ParkourMod
                 output.accept(RUBBER_BLOCK_ITEM.get().getDefaultInstance());
                 output.accept(GEL_BLOCK_ITEM.get().getDefaultInstance());
                 output.accept(RUBBER.get().getDefaultInstance());
+                output.accept(HEAL_BLOCK_ITEM.get().getDefaultInstance());
+                output.accept(DAMAGE_BLOCK_ITEM.get().getDefaultInstance());
             }).build());
 
     public ParkourMod(FMLJavaModLoadingContext context)

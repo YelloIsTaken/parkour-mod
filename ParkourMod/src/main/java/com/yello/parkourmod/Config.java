@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
 
 // An example config class. This is not required, but it's a good idea to have one to keep your config organized.
 // Demonstrates how to use Forge's config APIs
+@SuppressWarnings("unused")
 @Mod.EventBusSubscriber(modid = com.yello.parkourmod.ParkourMod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class Config
 {
@@ -44,12 +45,14 @@ public class Config
     public static String magicNumberIntroduction;
     public static Set<Item> items;
 
-    private static boolean validateItemName(final Object obj)
+    @SuppressWarnings("removal")
+private static boolean validateItemName(final Object obj)
     {
         return obj instanceof final String itemName && ForgeRegistries.ITEMS.containsKey(new ResourceLocation(itemName));
     }
 
-    @SubscribeEvent
+    @SuppressWarnings("removal")
+@SubscribeEvent
     static void onLoad(final ModConfigEvent event)
     {
         logDirtBlock = LOG_DIRT_BLOCK.get();

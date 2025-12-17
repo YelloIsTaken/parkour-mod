@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "parkourmod:kill"
+          "name": "parkourmod:kill_block"
         }
       ],
       "conditions": [
