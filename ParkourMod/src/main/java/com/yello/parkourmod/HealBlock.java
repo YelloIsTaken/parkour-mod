@@ -10,8 +10,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class KillBlock extends Block {
-    public KillBlock(Properties properties) {
+public class HealBlock extends Block {
+    public HealBlock(Properties properties) {
         super(properties.strength(1.0f).sound(SoundType.HONEY_BLOCK).noOcclusion());
     }
 
@@ -20,26 +20,9 @@ public class KillBlock extends Block {
         super.stepOn(level, pos, state, entity);
         if (!level.isClientSide) {
             if (entity instanceof LivingEntity living) {
-                living.kill();
-            } else {
-                entity.remove(RemovalReason.KILLED);
-            }
+                living.heal(explosionResistance);
+            }   
         }
-    }
-    @SuppressWarnings("deprecation")
-    @Override
-    public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
-        super.entityInside(state, level, pos, entity);
-        if (!level.isClientSide) {
-            if (entity instanceof LivingEntity living) {
-                living.kill();
-            } else {
-                entity.remove(RemovalReason.KILLED);
-            }
-        }
-    }
-    public boolean isToolRequired(BlockState state) {
-        return false; // No tool required, can break by hand
-    }
-
+    }    
+    
 }
