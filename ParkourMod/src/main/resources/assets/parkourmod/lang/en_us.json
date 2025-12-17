@@ -3,5 +3,9 @@
   "parkour_mod_tab": "Parkour Mod",
   "block.parkourmod.rubber_block": "Rubber Block",
   "block.parkourmod.gel_block": "Gel Block",
-  "item.parkourmod.rubber": "Rubber"
+  "block.parkourmod.kill_block": "Kill Block",
+  "item.parkourmod.kill_block": "Kill Block",
+  "item.parkourmod.heal_block": "Heal Block",
+  "item.parkourmod.rubber": "Rubber",
+  "block.parkourmod.heal_block": "Heal Block"
 }
