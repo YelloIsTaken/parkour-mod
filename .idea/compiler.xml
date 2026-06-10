@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.minecraftforge/eventbus-validator/7.0.1/7336cbd430f96e90ca4240d05597af49f7b77186/eventbus-validator-7.0.1.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.minecraftforge/eventbus/7.0.1/110bdba0d0d2518ff0ce7f75874ac9ff299f5dc4/eventbus-7.0.1.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jspecify/jspecify/1.0.0/7425a601c1c7ec76645a78d22b8c6a627edee507/jspecify-1.0.0.jar" />
+        </processorPath>
+        <module name="parkourmod.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="examplemod" target="25" />
+      <module name="examplemod.main" target="25" />
+      <module name="examplemod.test" target="25" />
+      <module name="ParkourMod" target="17" />
+      <module name="ParkourMod.main" target="17" />
+      <module name="ParkourMod.test" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

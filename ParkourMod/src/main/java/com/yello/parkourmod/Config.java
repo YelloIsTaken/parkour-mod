@@ -1,6 +1,6 @@
 package com.yello.parkourmod;
 
-import net.minecraft.resources.ResourceLocation;
+import ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
