@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: parkourmod
+Specification-Vendor: Yello
+Specification-Version: 1
+Implementation-Title: parkour-mod
+Implementation-Version: 1.0.0
+Implementation-Vendor: Yello
+Implementation-Timestamp: 2026-08-11T16:11:25+0200
+
