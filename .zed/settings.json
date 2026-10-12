@@ -1,0 +1,20 @@
+// Minecraft 1.20.1 / Gradle 8.8 can't be imported with Java 27,
+// so tell jdtls to run the Gradle import on JDK 17.
+{
+  "lsp": {
+    "jdtls": {
+      "initialization_options": {
+        "settings": {
+          "java": {
+            "import": { "gradle": { "java": { "home": "/home/bartek/.gradle/jdks/temurin-17" } } }
+          }
+        }
+      },
+      "settings": {
+        "java": {
+          "import": { "gradle": { "java": { "home": "/home/bartek/.gradle/jdks/temurin-17" } } }
+        }
+      }
+    }
+  }
+}

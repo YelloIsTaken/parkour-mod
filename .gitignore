@@ -1,0 +1,8 @@
+.gradle
+**/build/
+!**/src/**/build/
+
+# Random IDE subfolders
+.idea
+.zed
+.claude
