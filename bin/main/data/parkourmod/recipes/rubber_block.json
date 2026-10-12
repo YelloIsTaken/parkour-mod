@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "yx"
+  ],
+  "key": {
+    "x": { "item": "parkourmod:rubber" },
+    "y": { "item": "minecraft:slime_block" }
+  },
+  "result": {
+    "item": "parkourmod:rubber_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xy"
+  ],
+  "key": {
+    "x": { "item": "parkourmod:rubber_block" },
+    "y": { "item": "minecraft:blue_dye" }
+  },
+  "result": {
+    "item": "parkourmod:gel_block",
+    "count": 2
+  }
+}
