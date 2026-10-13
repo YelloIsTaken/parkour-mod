@@ -8,7 +8,7 @@ Parkour Mod
 ## Jump Up Item
 
 Gives Jump Boost II when eaten! Great for bigger jumps!
-<img src="https://raw.githubusercontent.com/YelloIsTaken/parkour-mod/refs/heads/main/ParkourMod/parkourmod.png" alt="Super Up Item">
+<img src="https://raw.githubusercontent.com/YelloIsTaken/parkour-mod/refs/heads/main/ParkourMod/parkourmod.png" alt="Jump Up Item">
 
 ## Rubber Block
 
