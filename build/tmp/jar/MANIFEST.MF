@@ -5,5 +5,5 @@ Specification-Version: 1
 Implementation-Title: parkour-mod
 Implementation-Version: 1.0.0
 Implementation-Vendor: Yello
-Implementation-Timestamp: 2026-08-11T16:11:25+0200
+Implementation-Timestamp: 2026-10-13T21:38:50+0200
 
