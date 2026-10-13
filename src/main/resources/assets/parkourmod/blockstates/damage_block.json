@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "parkourmod:block/damage_block" }
+  }
+}
