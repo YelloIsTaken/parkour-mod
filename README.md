@@ -5,7 +5,7 @@ Parkour Mod
 
 # Features:
 
-## Super Up Item
+## Jump Up Item
 
 Gives Jump Boost II when eaten! Great for bigger jumps!
 <img src="https://raw.githubusercontent.com/YelloIsTaken/parkour-mod/refs/heads/main/ParkourMod/parkourmod.png" alt="Super Up Item">
