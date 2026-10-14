@@ -1,8 +1,8 @@
 .gradle
 **/build/
 !**/src/**/build/
-bin/
-run/
+bin
+run
 
 # Random IDE subfolders
 .idea
