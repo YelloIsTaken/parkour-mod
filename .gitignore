@@ -2,6 +2,7 @@
 **/build/
 !**/src/**/build/
 bin/
+run/
 
 # Random IDE subfolders
 .idea

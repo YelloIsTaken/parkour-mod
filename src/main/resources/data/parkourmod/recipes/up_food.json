@@ -10,7 +10,7 @@
     "z": { "item": "parkourmod:rubber" }
   },
   "result": {
-    "item": "parkourmod:up_food",
+    "item": "parkourmod:jump_up",
     "count": 4
   }
 }

@@ -24,7 +24,7 @@ hideLightningFlashes:false
 mouseSensitivity:0.30046948356807524
 fov:0.5
 screenEffectScale:1.0
-fovEffectScale:1.0
+fovEffectScale:0.05510370517313578
 darknessEffectScale:1.0
 glintSpeed:0.5
 glintStrength:0.75

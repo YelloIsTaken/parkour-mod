@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "parkourmod:item/up_food"
+    "layer0": "parkourmod:item/jump_up"
   }
 }

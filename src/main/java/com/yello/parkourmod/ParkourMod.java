@@ -48,9 +48,15 @@ public class ParkourMod
     public static final RegistryObject<Item> HEAL_BLOCK_ITEM = ITEMS.register("heal_block", () -> new BlockItem(HEAL_BLOCK.get(), new Item.Properties()));
     public static final RegistryObject<Block> DAMAGE_BLOCK = BLOCKS.register("damage_block", () -> new DamageBlock(Block.Properties.of()));
     public static final RegistryObject<Item> DAMAGE_BLOCK_ITEM = ITEMS.register("damage_block", () -> new BlockItem(DAMAGE_BLOCK.get(), new Item.Properties()));
-    public static final RegistryObject<Item> PARKOUR_FOOD = ITEMS.register("up_food", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+    public static final RegistryObject<Item> JUMP_UP = ITEMS.register("jump_up", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
             .alwaysEat()
             .effect(() -> new MobEffectInstance(MobEffects.JUMP, 6000, 1, false, false), 1.0f)
+            .nutrition(2)
+            .saturationMod(1f)
+            .build())));
+    public static final RegistryObject<Item> SPEED_UP = ITEMS.register("speed_up", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+            .alwaysEat()
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 6000, 1, false, false, false), 1.0f)
             .nutrition(2)
             .saturationMod(1f)
             .build())));
@@ -58,15 +64,16 @@ public class ParkourMod
     public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("parkour_mod_tab", () -> CreativeModeTab.builder()
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .title(Component.translatable("parkour_mod_tab"))
-            .icon(() -> PARKOUR_FOOD.get().getDefaultInstance())
+            .icon(() -> JUMP_UP.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(KILL_ITEM.get().getDefaultInstance());
-                output.accept(PARKOUR_FOOD.get().getDefaultInstance());
+                output.accept(JUMP_UP.get().getDefaultInstance());
                 output.accept(RUBBER_BLOCK_ITEM.get().getDefaultInstance());
                 output.accept(GEL_BLOCK_ITEM.get().getDefaultInstance());
                 output.accept(RUBBER.get().getDefaultInstance());
                 output.accept(HEAL_BLOCK_ITEM.get().getDefaultInstance());
                 output.accept(DAMAGE_BLOCK_ITEM.get().getDefaultInstance());
+                output.accept(SPEED_UP.get().getDefaultInstance());
             }).build());
 
     public ParkourMod(FMLJavaModLoadingContext context)
