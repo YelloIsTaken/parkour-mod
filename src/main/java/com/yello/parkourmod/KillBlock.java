@@ -4,6 +4,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity.RemovalReason;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
@@ -13,10 +14,12 @@ public class KillBlock extends Block {
     public KillBlock(Properties properties) {
         super(properties.strength(1.0f).sound(SoundType.HONEY_BLOCK).noOcclusion());
     }
-
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
         super.stepOn(level, pos, state, entity);
+        if (entity instanceof ItemEntity) {
+            return;
+    } else {
         if (!level.isClientSide) {
             if (entity instanceof LivingEntity living) {
                 living.kill();
@@ -24,7 +27,7 @@ public class KillBlock extends Block {
                 entity.remove(RemovalReason.KILLED);
             }
         }
-    }
+    }};
     @SuppressWarnings("deprecation")
     @Override
     public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
